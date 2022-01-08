@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    margin-top: 5%;
+}
+
+header > p {
+    font-size: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+input {
+    width: 50%;
+
+}
+
+input[type=text] {
+    padding: 10px 15px; 
+    font-size: 20px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    caret-color: black;
+    margin-top: 2%;
+}
+
+input[type=password] {
+    padding: 10px 15px;
+    margin-top: 2%;
+    font-size: 20px;
+    background: white;
+    border-radius: 5px; 
+    caret-color: black;
+}
+
+.forgot {
+    font-size: 1rem;
+    margin-top: 2%;
+    width: 55%;
+    display: flex;
+}
+
+input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    background: red;
+    
+}
+a {
+    margin-left: auto;
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+input[type=submit] {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    background: gray;
+    margin: 2%;
+    width: 20%;
+    padding: 2% 5%;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+.colorTransition {
+    border-color: red;
+    transition: border-color 2s;
+  }
+  
+/* For mobiles*/
+ @media only screen and (max-width: 600px) {
+    body {
+        margin: 2%;
+    }
+
+    header {
+        margin-top: 15%;
+    }
+
+    header > p {
+        font-size: 0.5em;
+    }
+    
+    .main {
+        width: 80%;
+    }
+    input {
+        width: 95%;    
+    }
+ 
+    .forgot {
+        width: 95%;
+    }
+
+    input[type=submit] {
+        margin: 4%;
+        width: 40%;
+        padding: 4% 8%;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+      
+} 
+
+/*Landscape mobiles*/
+@media only screen and (max-height: 600px) {
+    body {
+        margin: 1%;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    header > p {
+        font-size: 0.5em;
+        margin: 0;
+    }
+    
+    .main {
+        width: 80%;
+    }
+    input {
+        width: 95%;    
+    }
+ 
+    .forgot {
+        width: 95%;
+    }
+
+    input[type=submit] {
+
+        width: 40%;
+        padding: 4% 8%;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+      
+} 
+
+/*Laptops*/
+@media only screen and (max-width: 768px) and (orentation: landscape) {  */
+    body {
+        margin: 2%;
+    }
+
+    
+    header > p {
+        font-size: 1rem;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        padding-bottom: 0;
+    }
+    
+    .main {
+        width: 100%;
+    }
+    input {
+        width: 100%;    
+    }
+ 
+    .forgot {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        padding: 3% 5%;
+    }
+    
+    p {
+        font-size: 1.4em;
+        padding-bottom: 2%;
+        margin-top: 0;
+    }
+}

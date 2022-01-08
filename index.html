@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+</head>
+<body>
+        <header>
+            Welcome Back!
+            <p>Please enter your login and password</p>
+        </header>
+        <form class="main">
+            <input type="text" id="email" name="firstname" placeholder="Email" required="required">
+            <input type="password" id="password" name="firstname" placeholder="Password" 
+            required="required" ondblclick="clickedTwice()" title="Double click to see password" >
+            <div class="forgot">        
+                <input type="checkbox"> Stay logged in
+                <a href="#">Forgot password?</a>
+            </div>    
+            <input type="submit" value="SIGN IN" id="submitBtn">
+        </form>
+        <p>Don't have an account? <a href="#">Sing Up!</a></p>
+        <script src="./scripts.js"></script>
+</body>
+</html>
