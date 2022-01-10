@@ -28,5 +28,5 @@ txt.addEventListener("focusout", ()=>{
 
 function loginAlert(event) {
   event.preventDefault();
-  alert(`Howdy`)
+  alert(`Howdy ${txt.value}`)
 }
