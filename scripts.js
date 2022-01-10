@@ -29,4 +29,5 @@ txt.addEventListener("focusout", ()=>{
 function loginAlert(event) {
   event.preventDefault();
   alert(`Howdy ${txt.value}`)
+  location.reload()
 }
