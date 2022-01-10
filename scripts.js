@@ -26,3 +26,7 @@ txt.addEventListener("focusout", ()=>{
   else txt.classList.remove("colorTransition") 
 } )
 
+function loginAlert(event) {
+  event.preventDefault();
+  alert(`Howdy`)
+}
