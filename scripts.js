@@ -8,7 +8,7 @@ function clickedTwice() {
 }
 
 const pass = document.querySelector("#password")
-const txt = document.querySelector("#email")
+const txt = document.querySelector("#username")
 const submitBtn = document.querySelector("#submitBtn")
 
 pass.addEventListener("focus", ()=>{
